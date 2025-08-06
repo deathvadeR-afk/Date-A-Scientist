@@ -1,8 +1,10 @@
-# Date-A-Scientist: OKCupid Profile Analysis & Prediction
+# Date-A-Sci*   **Demographics:** `age`, `sex`, `orientation`, `body_type`, `diet`, `education`, `location`, `ethnicity`, `religion`.
+*   **Lifestyle:** `drinks`, `drugs`, `smokes`, `pets`, `speaks`.
+*   **Target Variable:** `sign` (zodiac sign).st: OKCupid Profile Analysis & Prediction
 
 ## 📚 Project Overview
 
-This project delves into a dataset of user profiles from the dating platform OKCupid. The primary goal is to perform a comprehensive exploratory data analysis (EDA) to understand the demographics and characteristics of the users. Following the analysis, a machine learning model is developed to predict a user's job category based on their profile information, with a special focus on the text from their self-summary essays.
+This project delves into a dataset of user profiles from the dating platform OKCupid. The primary goal is to perform a comprehensive exploratory data analysis (EDA) to understand the demographics and characteristics of the users. Following the analysis, a machine learning model is developed to predict a user's zodiac sign based on their profile information, including demographics and lifestyle choices.
 
 This project showcases a complete data science pipeline, from data cleaning and preprocessing to feature engineering, model training, and evaluation.
 
@@ -17,7 +19,7 @@ The data used in this project is the `profiles.csv` dataset, which contains anon
 
 ## 🎯 Project Goal
 
-The main objective is to build and evaluate a classification model that can accurately predict a user's `job` category from the other available features, particularly the text data in their essays. This involves natural language processing (NLP) techniques to convert unstructured text into meaningful features for the model.
+The main objective is to build and evaluate a classification model that can accurately predict a user's zodiac sign from their profile information. This involves analyzing how various demographic and lifestyle choices might correlate with astrological signs, potentially helping to enhance the matchmaking process for users who haven't disclosed their sign.
 
 ## ⚙️ Methodology
 
@@ -32,23 +34,22 @@ The project follows these key steps:
     *   Analyzing relationships between different variables to uncover initial insights.
     *   Exploring the distribution of job categories.
 
-3.  **Feature Engineering & NLP:**
-    *   Combining all ten essay columns into a single text corpus for each user.
-    *   Processing the text data: removing stop words, punctuation, and applying lemmatization.
-    *   Converting the cleaned text into numerical vectors using TF-IDF (Term Frequency-Inverse Document Frequency).
-    *   Combining the TF-IDF text features with other categorical and numerical features from the dataset.
+3.  **Feature Engineering:**
+    *   Converting categorical variables into numerical format using one-hot encoding.
+    *   Handling missing values in the dataset.
+    *   Creating dummy variables for categorical features.
 
 4.  **Model Building & Training:**
     *   Splitting the dataset into training and testing sets.
-    *   Training several classification models to find the best performer. Models explored could include:
-        *   Naive Bayes
+    *   Training several classification models to find the best performer. Models explored include:
         *   Logistic Regression
-        *   Random Forest Classifier
+        *   K-Nearest Neighbors (KNN)
+        *   Decision Tree Classifier
     *   Using `Scikit-learn` pipelines to streamline the preprocessing and modeling workflow.
 
 5.  **Model Evaluation:**
     *   Evaluating the models on the test set using metrics like accuracy, precision, recall, and F1-score.
-    *   Analyzing the classification report and confusion matrix to understand model performance across different job categories.
+    *   Analyzing the classification report and confusion matrix to understand model performance across different zodiac signs.
 
 ## 🛠️ Technologies Used
 
