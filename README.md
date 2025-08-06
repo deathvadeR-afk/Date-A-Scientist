@@ -1,6 +1,4 @@
-# Date-A-Scientist   **Demographics:** `age`, `sex`, `orientation`, `body_type`, `diet`, `education`, `location`, `ethnicity`, `religion`.
-*   **Lifestyle:** `drinks`, `drugs`, `smokes`, `pets`, `speaks`.
-*   **Target Variable:** `sign` (zodiac sign).st: OKCupid Profile Analysis & Prediction
+# Date-A-Scientist
 
 ## 📚 Project Overview
 
